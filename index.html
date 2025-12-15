@@ -24,7 +24,7 @@ https://templatemo.com/tm-539-simple-house
 		<div class="placeholder">
 			<div class="parallax-window" data-parallax="scroll" data-image-src="img/simple-house-01.jpg">
 				<div class="tm-header">
-					<div class="row tm-header-inner">
+					<div class="row tm-header-inner" >
 						<div class="col-md-6 col-12">
 							<img style="
     visibility: hidden;
@@ -39,7 +39,9 @@ https://templatemo.com/tm-539-simple-house
 								<h6 class="tm-site-description">خيارك الآول في عالم الهدايا</h6>	
 							</div>
 						</div>
-						<nav class="col-md-6 col-12 tm-nav">
+						<nav class="col-md-6 col-12 tm-nav" style="
+    visibility: hidden;
+">
 							<ul class="tm-nav-ul">
 								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link active">الصفحة الرئيسية</a></li>
 								<li class="tm-nav-li"><a href="about.html" class="tm-nav-link">حول المتجر</a></li>
@@ -62,11 +64,13 @@ https://templatemo.com/tm-539-simple-house
 			
 			<div class="tm-paging-links">
 				<nav>
-					<ul>
-						<li class="tm-paging-item"><a href="#" class="tm-paging-link active">ريزين</a></li>
-						<li class="tm-paging-item"><a href="#" class="tm-paging-link">كروشيه</a></li>
-						<li class="tm-paging-item"><a href="#" class="tm-paging-link">آلعاب اميجرومي</a></li>
-						<li class="tm-paging-item"><a href="#" class="tm-paging-link">خصيصا لك</a></li>
+					<ul style="
+    direction: rtl;
+">
+						<li class="tm-paging-item"><a  onclick="return false;" class="tm-paging-link active">ريزين</a></li>
+						<li class="tm-paging-item"><a  onclick="return false;" class="tm-paging-link">كروشيه</a></li>
+						<li class="tm-paging-item"><a href="#" onclick="return false;" class="tm-paging-link">آلعاب اميجرومي</a></li>
+						<li class="tm-paging-item"><a href="#" onclick="return false;" class="tm-paging-link">خصيصا لك</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -377,5 +381,13 @@ https://templatemo.com/tm-539-simple-house
 			});
 		});
 	</script>
+	<style>
+.tm-paging-links a {
+    pointer-events: none;   /* disables click */
+    color: gray;            /* optional: indicate disabled */
+    cursor: default;        /* optional: show normal cursor */
+    text-decoration: none;  /* optional: remove underline */
+}
+</style>
 </body>
 </html>

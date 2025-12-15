@@ -429,6 +429,8 @@ p, address {
 }
 
 .tm-paging-link {
+  pointer-events: none;   /* disables click */
+  cursor: default;        /* optional: show normal cursor */
   padding: 10px 30px;
   display: flex;
   align-items: center;
